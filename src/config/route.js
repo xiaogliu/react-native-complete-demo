@@ -1,47 +1,34 @@
+// 引入依赖
 import React from "react";
 import { StackNavigator } from "react-navigation";
 
-// 路由文件
+// 引入页面组件
+import ScreenBottomTab from "../screens/ScreenBottomTab";
 import ScreenHome from "../screens/ScreenHome";
 import ScreenSome1 from "../screens/ScreenSome1";
-import ScreenSome2 from "../screens/ScreenSome2";
+import ScreenTab1 from "../screens/ScreenTab1";
+import ScreenTab2 from "../screens/ScreenTab2";
+import ScreenTab3 from "../screens/ScreenTab3";
 
-const StackModalNavigator = (routeConfigs, navigatorConfig) => {
-  const CardStackNavigator = StackNavigator(routeConfigs, navigatorConfig);
-  const modalRouteConfig = {};
-  const routeNames = Object.keys(routeConfigs);
-
-  for (let i = 0; i < routeNames.length; i++) {
-    modalRouteConfig[`${routeNames[i]}Modal`] = routeConfigs[routeNames[i]];
-  }
-
-  const ModalStackNavigator = StackNavigator(
-    {
-      CardStackNavigator: { screen: CardStackNavigator },
-      ...modalRouteConfig
-    },
-    {
-      mode: "modal",
-      headerMode: "none"
-    }
-  );
-
-  return ModalStackNavigator;
-};
-
-const AppNavigator = StackModalNavigator(
+// 配置路由
+const AppNavigator = StackNavigator(
   {
+    ScreenBottomTab: {
+      screen: ScreenBottomTab,
+    },
     ScreenHome: {
-      screen: ScreenHome
+      screen: ScreenHome,
     },
     ScreenSome1: {
-      screen: ScreenSome1
+      screen: ScreenSome1,
     },
-    ScreenSome2: {
-      screen: ScreenSome2
-    }
+    ScreenTab2: {
+      screen: ScreenTab2,
+    },
+    ScreenTab2: {
+      screen: ScreenTab2,
+    },
   },
-  { initialRouteName: "ScreenHome", headerMode: "screen" }
 );
 
 export default () => <AppNavigator />;

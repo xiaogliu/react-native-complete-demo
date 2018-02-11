@@ -3,10 +3,6 @@ import { View, Button, Text } from "react-native";
 
 export default self => (
   <View>
-    <Text>some2</Text>
-    <Button
-      title="goHome"
-      onPress={() => self.navigation.navigate("ScreenHome")}
-    />
+    <Text style={{ fontSize: 36 }}>TAB2</Text>
   </View>
 );

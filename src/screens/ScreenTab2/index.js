@@ -3,7 +3,7 @@ import view from "./view";
 
 export default class ScreenHome extends Component {
   static navigationOptions = {
-    title: "some2",
+    title: "TAB2",
   };
 
   constructor(props) {
