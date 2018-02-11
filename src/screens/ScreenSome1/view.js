@@ -3,6 +3,6 @@ import { View, Text } from 'react-native';
 
 export default self => (
   <View>
-    <Text>some1</Text>
+    <Text style={{ fontSize: 36 }}>some1</Text>
   </View>
 );
