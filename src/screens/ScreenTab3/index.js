@@ -6,7 +6,7 @@ export default class ScreenHome extends Component {
   static navigationOptions = {
     title: "TAB3",
     tabBarIcon: ({ focused }) => {
-      const icon = focused ? require("../../assets/images/tab_me_active.png") : require("../../assets/images/tab_me.png");
+      const icon = focused ? require("../../assets/images/tab_home_active.png") : require("../../assets/images/tab_home.png");
       return <Image source={icon} style={{ height: 22, width: 22 }} />;
     },
   };

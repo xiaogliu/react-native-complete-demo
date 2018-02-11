@@ -4,9 +4,9 @@ import view from "./view";
 
 export default class ScreenTab1 extends Component {
   static navigationOptions = {
-    title: '首页',
+    title: 'TAB1',
     tabBarIcon: ({ focused }) => {
-      const icon = focused ? require("../../assets/images/tab_investment_active.png") : require("../../assets/images/tab_investment.png");
+      const icon = focused ? require("../../assets/images/tab_home_active.png") : require("../../assets/images/tab_home.png");
       return <Image source={icon} style={{ height: 22, width: 22 }} />;
     },
   };
