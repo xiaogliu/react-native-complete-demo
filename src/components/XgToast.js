@@ -43,11 +43,11 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class LsToast extends Component {
+export default class XgToast extends Component {
   // 初始化 默认 props
   static defaultProps = {
     position: 'top',
-    imgSrc: require('../assets/img/login_close.png'),
+    imgSrc: require('../assets/images/toast_error.png'),
   };
 
   constructor(props) {
@@ -56,7 +56,7 @@ export default class LsToast extends Component {
       text: '',
       isShow: false,
       opacityAnimate: new Animated.Value(OPACITY), // 动画 值初始化
-      imgSrc: require('../assets/img/login_close.png'),
+      imgSrc: require('../assets/images/toast_error.png'),
       toastTop: pxToDp(400),
     };
 
@@ -77,19 +77,16 @@ export default class LsToast extends Component {
    * 显示
    */
 
-  show(text = 'Toast', duration = 2000, type = 'warn', toastTop = pxToDp(400)) {
+  show(text = 'Toast', duration = 2000, type = 'succeed', toastTop = pxToDp(400)) {
     this.duration = duration;
 
     // 根据不同 toast 类型，加载不同提示图片
     switch (type) {
-      case 'error':
-        this.setState({ imgSrc: require('../assets/img/login_close.png') });
-        break;
       case 'succeed':
-        this.setState({ imgSrc: require('../assets/img/toast_succeed.png') });
+        this.setState({ imgSrc: require('../assets/images/toast_succeed.png') });
         break;
-      case 'warn':
-        this.setState({ imgSrc: require('../assets/img/toast_warn.png') });
+      case 'error':
+        this.setState({ imgSrc: require('../assets/images/toast_error.png') });
         break;
       default:
         break;
