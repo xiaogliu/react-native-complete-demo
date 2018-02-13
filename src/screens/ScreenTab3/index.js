@@ -1,12 +1,14 @@
-import React, { Component } from "react";
-import { Image } from "react-native";
-import view from "./view";
+import React, { Component } from 'react';
+import { Image } from 'react-native';
+import view from './view';
 
-export default class ScreenHome extends Component {
+export default class ScreenTab3 extends Component {
   static navigationOptions = {
-    title: "TAB3",
+    title: 'TAB3',
     tabBarIcon: ({ focused }) => {
-      const icon = focused ? require("../../assets/images/tab_home_active.png") : require("../../assets/images/tab_home.png");
+      const icon = focused
+        ? require('../../assets/images/tab_home_active.png')
+        : require('../../assets/images/tab_home.png');
       return <Image source={icon} style={{ height: 22, width: 22 }} />;
     },
   };

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import view from './view';
 
-export default class ScreenHome extends Component {
+export default class ScreenSome1 extends Component {
   static navigationOptions = {
     title: 'some1',
   };
