@@ -1,6 +1,11 @@
-import { initialState } from './store';
+const initialState = {
+  userInfo: {
+    name: '小光',
+    gender: '男',
+  },
+};
 
-function reducer(state = initialState, action) {
+function reducers(state = initialState, action) {
   switch (action.type) {
     case 'SET_USER_INFO':
       // 合并 userInfo 对象
@@ -16,4 +21,4 @@ function reducer(state = initialState, action) {
   }
 }
 
-export default reducer;
+export default reducers;

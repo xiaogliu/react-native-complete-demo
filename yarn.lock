@@ -4229,6 +4229,10 @@ realpath-native@^1.0.0:
   dependencies:
     util.promisify "^1.0.0"
 
+redux-persist@^5.7.2:
+  version "5.7.2"
+  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-5.7.2.tgz#924572670480a1a2ce70b16bf3011ffac583fdb0"
+
 redux@^3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/redux/-/redux-3.7.2.tgz#06b73123215901d25d065be342eb026bc1c8537b"

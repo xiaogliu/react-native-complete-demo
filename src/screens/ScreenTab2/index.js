@@ -36,7 +36,7 @@ class ScreenTab2 extends Component {
 
 // 将 store 中的状态映射（map）到当前组件的 props 中
 function mapStateToProps(state) {
-  return { userInfo: state.userInfo };
+  return { userInfo: state.reducers.userInfo };
 }
 
 // 将 actions 中定义的方法映射到当前组件的 props 中

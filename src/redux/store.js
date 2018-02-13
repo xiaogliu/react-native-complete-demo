@@ -1,13 +1,23 @@
 import { createStore } from 'redux';
+import { AsyncStorage } from 'react-native';
+import { persistStore, persistCombineReducers } from 'redux-persist';
 import reducers from './reducers';
 
-const initialState = {
-  userInfo: {
-    name: '小光',
-    gender: '男',
-  },
+// 持久化存储配置
+const config = {
+  key: 'root',
+  storage: AsyncStorage,
 };
 
-const store = createStore(reducers, initialState);
+const persistReducers = persistCombineReducers(config, {
+  reducers,
+});
 
-export default store;
+const configureStore = () => {
+  const store = createStore(persistReducers);
+  const persistor = persistStore(store);
+
+  return { persistor, store };
+};
+
+export default configureStore;
