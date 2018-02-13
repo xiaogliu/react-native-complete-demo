@@ -52,5 +52,11 @@
 			</dict>
 		</dict>
 	</dict>
+  <!--allow http request-->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+			<key>NSAllowsArbitraryLoads</key>
+			<true/>
+	</dict>
 </dict>
 </plist>
