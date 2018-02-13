@@ -9,7 +9,9 @@
   "dependencies": {
     "react": "16.0.0",
     "react-native": "0.51.0",
-    "react-navigation": "^1.0.0-beta.27"
+    "react-navigation": "^1.0.0-beta.27",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
