@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 import view from './view';
 
 export default class ScreenHome extends Component {
@@ -17,7 +18,10 @@ export default class ScreenHome extends Component {
     super(props);
     this.navigation = props.navigation;
   }
-
+  componentDidMount() {
+    // 隐藏启动页
+    SplashScreen.hide();
+  }
   render() {
     return view(this);
   }
