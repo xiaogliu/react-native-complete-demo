@@ -1,8 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
+import pxToDp from '../../config/pxToDp';
 
 export default self => (
   <View>
-    <Text style={{ fontSize: 36 }}>TAB3</Text>
+    <Text style={{ fontSize: pxToDp(36) }}>测试自动加载不同分辨率图片</Text>
+    <Image
+      source={require('../../assets/images/test.png')}
+      style={{ height: pxToDp(80), width: pxToDp(80) }}
+    />
   </View>
 );

@@ -4,7 +4,7 @@ import view from './view';
 
 export default class ScreenTab3 extends Component {
   static navigationOptions = {
-    title: 'TAB3',
+    title: 'n倍图',
     tabBarIcon: ({ focused }) => {
       const icon = focused
         ? require('../../assets/images/tab_home_active.png')
