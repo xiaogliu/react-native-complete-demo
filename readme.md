@@ -1,7 +1,7 @@
-一个完整、普适但不臃肿的 React Native 脚手架，具有下属特点：
+一个完整、普适但不臃肿的 React Native 脚手架，具有下述特点：
 
 * React Navigation 路由导航（可以自定义单个页面进入动画）；
-* 集成 Redux 进行状态管理；
+* 集成 Redux 进行状态管理，并实现本地持久化存储；
 * 使用 Fetch API 进行网络请求；
 * 自定义组件；
 * 自定义启动页、App 名称、appID 等；
@@ -54,3 +54,10 @@
 * `App.js` 可以理解为 react native（js 部分） 代码部分的入口文件，比如整个项目的路由在这里导入
 * `app.json` 项目说明，主要给原生 app 打包用，包括项目名称和手机桌面展示名称 [React Native : 0.41 app.json](https://stackoverflow.com/questions/42409459/react-native-0-41-app-json)
 * `index.js` 打包 app 时进入 react native（js 部分） 的入口文件（0.49 以后安卓、ios 共用一个入口文件）
+
+## 了解更多
+
+关于该项目更为具体的介绍可查看这两篇文章，详细介绍了开发过程：
+
+[开发 React Native APP —— 从改造官方 Demo 开始（一）](https://xiaogliu.github.io/2018/02/27/develop-react-native-app-1/)  
+[开发 React Native APP —— 从改造官方 Demo 开始（二）](https://xiaogliu.github.io/2018/02/27/develop-react-native-app-2/)
