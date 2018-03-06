@@ -9,7 +9,7 @@
 * 网络检测（是否连接网络）；
 * 可构建离线安装包。
 
-<img src="http://ol9ge41ud.bkt.clouddn.com/complete_intro.gif" width = "240" height = "427" alt="图片名称" align=center />
+![介绍图片](http://ol9ge41ud.bkt.clouddn.com/complete_intro.gif)
 
 ## 目录介绍
 
