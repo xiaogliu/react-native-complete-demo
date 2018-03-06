@@ -9,6 +9,8 @@
 * 网络检测（是否连接网络）；
 * 可构建离线安装包。
 
+<img src="http://ol9ge41ud.bkt.clouddn.com/complete_intro.gif" width = "240" height = "427" alt="图片名称" align=center />
+
 ## 目录介绍
 
 .  
@@ -65,11 +67,3 @@
 
 [开发 React Native APP —— 从改造官方 Demo 开始（一）](https://xiaogliu.github.io/2018/02/27/develop-react-native-app-1/)  
 [开发 React Native APP —— 从改造官方 Demo 开始（二）](https://xiaogliu.github.io/2018/02/27/develop-react-native-app-2/)
-
-部分页面展示如下：
-
-<img src="http://ol9ge41ud.bkt.clouddn.com/tab_navigator.gif" width = "240" height = "427" alt="图片名称" align=center />
-<img src="http://ol9ge41ud.bkt.clouddn.com/nav_diff_entry.gif" width = "240" height = "427" alt="图片名称" align=center />
-<img src="http://ol9ge41ud.bkt.clouddn.com/network.gif" width = "240" height = "427" alt="图片名称" align=center />
-<img src="http://ol9ge41ud.bkt.clouddn.com/persist_redux.gif" width = "240" height = "427" alt="图片名称" align=center />
-<img src="http://ol9ge41ud.bkt.clouddn.com/launch_image.gif" width = "480" height = "407" alt="图片名称" align=center />
