@@ -9,7 +9,7 @@
 * 网络检测（是否连接网络）；
 * 可构建离线安装包。
 
-[点击这里查看 Demo 展示](http://ol9ge41ud.bkt.clouddn.com/complete_intro.gif){:target="\_blank"}
+[点击这里查看 Demo 展示](http://ol9ge41ud.bkt.clouddn.com/complete_intro.gif)
 
 ## 目录介绍
 
