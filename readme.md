@@ -25,6 +25,7 @@
 | |-- redux  
 | |-- screens  
 | | |-- ScreenHome  
+| | |-- ScreenWebView  
 | | |-- 其他页面文件  
 |  
 |-- App.js  
@@ -50,6 +51,7 @@
 
 * `src/screens/` 所有页面文件
 * `src/ScreenHome/` 这个目录是放具体页面文件的，为了进一步关注代码分离，里面又分为三个文件：`index.js` 中包含逻辑部分，`style.js` 中包含样式部分；`view.js` 中包含视图或者说页面元素部分。其他页面文件结构与此相同。
+* `src/ScreenWebView/` 内嵌 H5
 
 * `App.js` 可以理解为 react native（js 部分） 代码部分的入口文件，比如整个项目的路由在这里导入
 * `app.json` 项目说明，主要给原生 app 打包用，包括项目名称和手机桌面展示名称 [React Native : 0.41 app.json](https://stackoverflow.com/questions/42409459/react-native-0-41-app-json)
