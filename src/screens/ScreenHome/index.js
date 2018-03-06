@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
+
+// redux 相关
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as actionCreators from '../../redux/actions';
+
 import view from './view';
 
-export default class ScreenHome extends Component {
+class ScreenHome extends Component {
   static navigationOptions = {
     title: '首页',
     tabBarIcon: ({ focused }) => {
@@ -26,3 +32,16 @@ export default class ScreenHome extends Component {
     return view(this);
   }
 }
+
+// 关联 redux store
+function mapStateToProps(state) {
+  return {
+    userInfo: state.reducers.userInfo,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actionCreators, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ScreenHome);

@@ -11,6 +11,7 @@ export default self => (
     {/* ScreenSome2 从屏幕下面进入 */}
     <Button title="goSome2Modal" onPress={() => self.navigation.navigate('ScreenSome2Modal')} />
 
+    {/* 跳转 H5 页面 */}
     <Button
       title="webView"
       onPress={() =>
@@ -20,5 +21,10 @@ export default self => (
         })
       }
     />
+
+    {/* 网络状态，一般没有网络连接时提示用户 */}
+    <Text style={{ width: '100%', textAlign: 'center', marginTop: 20 }}>
+      当前网络：{self.props.userInfo.connectNetType}
+    </Text>
   </View>
 );
