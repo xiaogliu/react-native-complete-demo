@@ -10,6 +10,7 @@ import ScreenSome2 from '../screens/ScreenSome2';
 import ScreenTab1 from '../screens/ScreenTab1';
 import ScreenTab2 from '../screens/ScreenTab2';
 import ScreenTab3 from '../screens/ScreenTab3';
+import ScreenWebView from '../screens/ScreenWebView';
 
 /**
  * 自定义 StackNavigator，可以选择 screen 进入方式
@@ -64,6 +65,9 @@ const AppNavigator = StackModalNavigator({
   },
   ScreenTab3: {
     screen: ScreenTab3,
+  },
+  ScreenWebView: {
+    screen: ScreenWebView,
   },
 });
 

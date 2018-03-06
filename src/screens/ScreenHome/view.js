@@ -10,5 +10,15 @@ export default self => (
 
     {/* ScreenSome2 从屏幕下面进入 */}
     <Button title="goSome2Modal" onPress={() => self.navigation.navigate('ScreenSome2Modal')} />
+
+    <Button
+      title="webView"
+      onPress={() =>
+        self.navigation.navigate('ScreenWebView', {
+          url: 'https://github.com/facebook/react-native',
+          title: '加载中...',
+        })
+      }
+    />
   </View>
 );
