@@ -11,55 +11,95 @@
 
 [点击这里查看 Demo 展示](http://ol9ge41ud.bkt.clouddn.com/complete_intro.gif)
 
+## 开发环境及工具
+
+* 基于 RN 0.49；
+* macOS High Sierra 10.13.3；Xcode 9.2；Android Studio 3.0.1；
+* 安卓（4.3 及以上）/ iOS（8 及以上） 已测试。
+
+## 本地运行
+
+1.  下载本项目，并安装依赖包；
+2.  安装 React Native CLI 及安卓/iOS 开发环境（可参考 RN 官网介绍 [Building Projects with Native Code](https://facebook.github.io/react-native/docs/getting-started.html)）
+
+3.  进入项目跟目录，执行  下面命令：
+
+```bash
+react-native run-ios # ios
+react-native run-android # 安卓
+```
+
+> 也可通过 Xcode 打开 ios 目录下的 “项目目录” 后点 `运行` 或者 Android Studio 打开 `android` 目录后点 `运行` 启动项目。
+
 ## 目录介绍
 
+**目录结构如下**：
+
 .  
-|-- android  
-|-- ios  
-|-- src  
-| |-- assets  
-| |-- components  
-| | |-- XgToast.js  
-| |  
-| |-- config  
-| | |-- pxToDp.js  
-| | |-- pxToDp.js  
-| | |-- pxToDp.js  
-| |  
-| |-- redux  
-| |-- screens  
-| | |-- ScreenHome  
-| | |-- ScreenWebView  
-| | |-- 其他页面文件  
-|  
-|-- App.js  
-|-- app.json  
-|-- index.js
+ |-- android &nbsp;  
+ |-- ios &nbsp;  
+ |-- src &nbsp;  
+ | &nbsp;&nbsp;&nbsp; |-- assets  
+ | &nbsp;&nbsp;&nbsp; |-- components  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- XgToast.js  
+ | &nbsp;&nbsp;&nbsp; |  
+ | &nbsp;&nbsp;&nbsp; |-- config  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- pxToDp.js  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- route.js.js  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- xgHttp.js  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- xgRequest.js  
+ | &nbsp;&nbsp;&nbsp; |  
+ | &nbsp;&nbsp;&nbsp; |-- redux  
+ | &nbsp;&nbsp;&nbsp; |-- screens  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- ScreenHome  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- index.js  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- style.js  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- view.js  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- ScreenWebView  
+ | &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; |-- 其他页面文件  
+ |  
+ |-- App.js  
+ |-- app.json  
+ |-- index.js
 
-* `android/` android 原生代码（使用 android studio 要打开这个目录，如果直接打开父目录报错）
-* `ios/` ios 原生代码（使用 xcode 打开这个目录，如果直接打开父目录报错）
+**目录说明如下**
 
-* `src/` 放置所有原始的 react native 代码
-* `src/assets/` 图片、样式文件
+* `android/` &nbsp; # android 原生代码（使用 android studio 要打开这个目录，如果直接打开父目录报错）
+* `ios/` &nbsp; # ios 原生代码（使用 xcode 打开这个目录下的项目目录）
 
-* `src/components/` 自定义组件目录
-* `src/components/XgToast.js` 这个是自定义 Toast 组件
+  &nbsp;&nbsp;&nbsp;
 
-* `src/config/` 配置文件目录，比如路由配置
-* `src/config/pxToDp.js` 单位自适应文件
-* `src/config/route.js` 路由文件
-* `src/config/xgHttp.js` 网络请求文件
-* `src/config/xgRequest.js` 具体网络请求 API 列表
+* `src/` &nbsp; # 放置所有原始的 react native 代码
+* `src/assets/` &nbsp; # 图片、样式文件
 
-* `src/redux/` redux 状态管理目录
+  &nbsp;&nbsp;&nbsp;
 
-* `src/screens/` 所有页面文件
-* `src/ScreenHome/` 这个目录是放具体页面文件的，为了进一步关注代码分离，里面又分为三个文件：`index.js` 中包含逻辑部分，`style.js` 中包含样式部分；`view.js` 中包含视图或者说页面元素部分。其他页面文件结构与此相同。
-* `src/ScreenWebView/` 内嵌 H5
+* `src/components/` &nbsp; # 自定义组件目录
+* `src/components/XgToast.js` &nbsp; # 这个是自定义 Toast 组件
 
-* `App.js` 可以理解为 react native（js 部分） 代码部分的入口文件，比如整个项目的路由在这里导入
-* `app.json` 项目说明，主要给原生 app 打包用，包括项目名称和手机桌面展示名称 [React Native : 0.41 app.json](https://stackoverflow.com/questions/42409459/react-native-0-41-app-json)
-* `index.js` 打包 app 时进入 react native（js 部分） 的入口文件（0.49 以后安卓、ios 共用一个入口文件）
+  &nbsp;&nbsp;&nbsp;
+
+* `src/config/` &nbsp; # 配置文件目录，比如路由配置
+* `src/config/pxToDp.js` &nbsp; # 单位自适应文件
+* `src/config/route.js` &nbsp; # 路由文件
+* `src/config/xgHttp.js` &nbsp; # 网络请求文件
+* `src/config/xgRequest.js` &nbsp; # 具体网络请求 API 列表
+
+  &nbsp;&nbsp;&nbsp;
+
+* `src/redux/` &nbsp; # redux 状态管理目录
+
+  &nbsp;&nbsp;&nbsp;
+
+* `src/screens/` &nbsp; # 所有页面文件
+* `src/ScreenHome/` &nbsp; # 这个目录是放具体页面文件的，为了进一步关注代码分离，里面又分为三个文件：`index.js` &nbsp; # 中包含逻辑部分，`style.js` 中包含样式部分；`view.js` 中包含视图或者说页面元素部分。其他页面文件结构与此相同。
+* `src/ScreenWebView/` &nbsp; # 内嵌 H5
+
+  &nbsp;&nbsp;&nbsp;
+
+* `App.js` &nbsp; # 可以理解为 react native（js 部分） 代码部分的入口文件，比如整个项目的路由在这里导入
+* `app.json` &nbsp; # 项目说明，主要给原生 app 打包用，包括项目名称和手机桌面展示名称 [React Native : 0.41 app.json](https://stackoverflow.com/questions/42409459/react-native-0-41-app-json)
+* `index.js` &nbsp; # 打包 app 时进入 react native（js 部分） 的入口文件（0.49 以后安卓、ios 共用一个入口文件）
 
 ## 了解更多
 
