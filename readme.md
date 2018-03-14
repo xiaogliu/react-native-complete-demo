@@ -22,7 +22,7 @@
 1.  下载本项目，并安装依赖包；
 2.  安装 React Native CLI 及安卓/iOS 开发环境（可参考 RN 官网介绍 [Building Projects with Native Code](https://facebook.github.io/react-native/docs/getting-started.html)）
 
-3.  进入项目跟目录，执行下面命令：
+3.  进入项目根目录，执行下面命令：
 
 ```bash
 react-native run-ios # ios
