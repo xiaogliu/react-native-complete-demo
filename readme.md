@@ -31,6 +31,8 @@ react-native run-android # 安卓
 
 > 也可通过 Xcode 打开 ios 目录下的 “项目目录” 后点 `运行` 或者 Android Studio 打开 `android` 目录后点 `运行` 启动项目。
 
+NOTE：开发中遇到问题可参考开发这个项目过程中的 [开发记录](https://github.com/xiaogliu/step_by_step/tree/master/04_JS_Framework/1_react/react_native)
+
 ## 目录介绍
 
 **目录结构如下：**
@@ -101,7 +103,7 @@ react-native run-android # 安卓
 * `app.json` &nbsp; # 项目说明，主要给原生 app 打包用，包括项目名称和手机桌面展示名称 [React Native : 0.41 app.json](https://stackoverflow.com/questions/42409459/react-native-0-41-app-json)
 * `index.js` &nbsp; # 打包 app 时进入 react native（js 部分） 的入口文件（0.49 以后安卓、ios 共用一个入口文件）
 
-## 了解更多
+## 其他
 
 关于该项目更为具体的介绍可查看这两篇文章，详细介绍了开发过程：
 
