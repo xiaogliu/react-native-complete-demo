@@ -14,7 +14,7 @@
 ## 开发环境及工具
 
 * 基于 RN 0.49；
-* macOS High Sierra 10.13.3；Xcode 9.2；Android Studio 3.0.1；
+* macOS High Sierra 10.13.3；Xcode 9.2；Android Studio 3.0.1；
 * 安卓（4.3 及以上）/ iOS（8 及以上） 已测试。
 
 ## 本地运行
@@ -33,7 +33,7 @@ react-native run-android # 安卓
 
 ## 目录介绍
 
-**目录结构如下**：
+**目录结构如下：**
 
 .  
  |-- android &nbsp;  
@@ -62,7 +62,7 @@ react-native run-android # 安卓
  |-- app.json  
  |-- index.js
 
-**目录说明如下**
+**目录说明如下：**
 
 * `android/` &nbsp; # android 原生代码（使用 android studio 要打开这个目录，如果直接打开父目录报错）
 * `ios/` &nbsp; # ios 原生代码（使用 xcode 打开这个目录下的项目目录）
