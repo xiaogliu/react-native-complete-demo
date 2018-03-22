@@ -68,42 +68,42 @@ NOTE：开发中遇到问题可参考开发这个项目过程中的 [开发记�
 
 **目录说明如下：**
 
-* `android/` &nbsp; # android 原生代码（使用 android studio 要打开这个目录，如果直接打开父目录报错）
-* `ios/` &nbsp; # ios 原生代码（使用 xcode 打开这个目录下的项目目录）
+> `android/` &nbsp; # android 原生代码（使用 android studio 要打开这个目录，如果直接打开父目录报错）  
+> `ios/` &nbsp; # ios 原生代码（使用 xcode 打开这个目录下的项目目录）
 
-  &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
-* `src/` &nbsp; # 放置所有原始的 react native 代码
-* `src/assets/` &nbsp; # 图片、样式文件
+> `src/` &nbsp; # 放置所有原始的 react native 代码  
+> `src/assets/` &nbsp; # 图片、样式文件
 
-  &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
-* `src/components/` &nbsp; # 自定义组件目录
-* `src/components/XgToast.js` &nbsp; # 这个是自定义 Toast 组件
+> `src/components/` &nbsp; # 自定义组件目录  
+> `src/components/XgToast.js` &nbsp; # 这个是自定义 Toast 组件
 
-  &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
-* `src/config/` &nbsp; # 配置文件目录，比如路由配置
-* `src/config/pxToDp.js` &nbsp; # 单位自适应文件
-* `src/config/route.js` &nbsp; # 路由文件
-* `src/config/xgHttp.js` &nbsp; # 网络请求文件
-* `src/config/xgRequest.js` &nbsp; # 具体网络请求 API 列表
+> `src/config/` &nbsp; # 配置文件目录，比如路由配置  
+> `src/config/pxToDp.js` &nbsp; # 单位自适应文件  
+> `src/config/route.js` &nbsp; # 路由文件  
+> `src/config/xgHttp.js` &nbsp; # 网络请求文件  
+> `src/config/xgRequest.js` &nbsp; # 具体网络请求 API 列表
 
-  &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
-* `src/redux/` &nbsp; # redux 状态管理目录
+> `src/redux/` &nbsp; # redux 状态管理目录
 
-  &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
-* `src/screens/` &nbsp; # 所有页面文件
-* `src/ScreenHome/` &nbsp; # 这个目录是放具体页面文件的，为了进一步关注代码分离，里面又分为三个文件：`index.js` &nbsp; # 中包含逻辑部分，`style.js` 中包含样式部分；`view.js` 中包含视图或者说页面元素部分。其他页面文件结构与此相同。
-* `src/ScreenWebView/` &nbsp; # 内嵌 H5
+> `src/screens/` &nbsp; # 所有页面文件  
+> `src/ScreenHome/` &nbsp; # 这个目录是放具体页面文件的，为了进一步关注代码分离，里面又分为三个文件：`index.js` &nbsp; # 中包含逻辑部分，`style.js` 中包含样式部分；`view.js` 中包含视图或者说页面元素部分。其他页面文件结构与此相同。
+> `src/ScreenWebView/` &nbsp; # 内嵌 H5
 
-  &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
-* `App.js` &nbsp; # 可以理解为 react native（js 部分） 代码部分的入口文件，比如整个项目的路由在这里导入
-* `app.json` &nbsp; # 项目说明，主要给原生 app 打包用，包括项目名称和手机桌面展示名称 [React Native : 0.41 app.json](https://stackoverflow.com/questions/42409459/react-native-0-41-app-json)
-* `index.js` &nbsp; # 打包 app 时进入 react native（js 部分） 的入口文件（0.49 以后安卓、ios 共用一个入口文件）
+> `App.js` &nbsp; # 可以理解为 react native（js 部分） 代码部分的入口文件，比如整个项目的路由在这里导入  
+> `app.json` &nbsp; # 项目说明，主要给原生 app 打包用，包括项目名称和手机桌面展示名称 [React Native : 0.41 app.json](https://stackoverflow.com/questions/42409459/react-native-0-41-app-json)  
+> `index.js` &nbsp; # 打包 app 时进入 react native（js 部分） 的入口文件（0.49 以后安卓、ios 共用一个入口文件）
 
 ## 其他
 
