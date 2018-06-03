@@ -99,7 +99,8 @@ NOTE：开发中遇到问题可参考开发这个项目过程中的 [开发记�
 
 有同学在使用这个仓库的时候发现了问题并提了 issue，部分汇总如下，便于查看问题：
 
-1.  windows 平台开发安卓应用 `tabBarIcon` 未正确渲染 [#1](https://github.com/xiaogliu/react_native_complete_demo/issues/1)
+1.  windows 平台开发安卓应用 `tabBarIcon` 未正确渲染 [#1](https://github.com/xiaogliu/react_native_complete_demo/issues/1)    
+2.  构建安卓应用时无法下载 gradle [#3](https://github.com/xiaogliu/react_native_complete_demo/issues/3)
 
 ## 其他
 
