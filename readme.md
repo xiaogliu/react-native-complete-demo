@@ -9,7 +9,7 @@
 * 网络检测（是否连接网络）；
 * 可构建离线安装包。
 
-[点击这里查看 Demo 展示](http://ol9ge41ud.bkt.clouddn.com/complete_intro.gif)
+[点击这里查看 Demo 展示](https://user-gold-cdn.xitu.io/2018/2/28/161d877eb7987d89?imageslim)
 
 > update 2018-04-25：由于现在 RN 及其相关插件更新频繁，如果出于学习的目的，安装依赖时最好按照 `package.json` 中指定的 package 版本进行安装，熟悉 RN 开发流程后再升级版本。
 
@@ -106,5 +106,5 @@ NOTE：开发中遇到问题可参考开发这个项目过程中的 [开发记�
 
 关于该项目更为具体的介绍可查看这两篇文章，详细介绍了开发过程：
 
-[开发 React Native APP —— 从改造官方 Demo 开始（一）](https://xiaogliu.github.io/2018/02/27/develop-react-native-app-1/)  
-[开发 React Native APP —— 从改造官方 Demo 开始（二）](https://xiaogliu.github.io/2018/02/27/develop-react-native-app-2/)
+[开发 React Native APP —— 从改造官方 Demo 开始（一）](https://juejin.im/post/5a9602745188257a5c609b2f)  
+[开发 React Native APP —— 从改造官方 Demo 开始（二）](https://juejin.im/post/5a9602c45188257a7262e3fb)
