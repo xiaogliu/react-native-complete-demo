@@ -35,8 +35,6 @@ react-native run-android # 安卓
 
 > 也可通过 Xcode 打开 ios 目录下的 “项目目录” 后点 `运行` 或者 Android Studio 打开 `android` 目录后点 `运行` 启动项目。
 
-NOTE：开发中遇到问题可参考开发这个项目过程中的 [开发记录](https://github.com/xiaogliu/step_by_step/tree/master/04_JS_Framework/1_react/react_native)
-
 ## 目录介绍
 
 **目录结构如下：**
